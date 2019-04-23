@@ -14,9 +14,11 @@ ops:
 
 .PHONY: dev
 dev:
-	python setup.py develop $(DEV_USER_FLAG)
+	# python setup.py develop $(DEV_USER_FLAG)
+	python setup.py develop
 
 .PHONY: clean
 clean:
-	python setup.py develop --uninstall $(DEV_USER_FLAG)
+	# python setup.py develop --uninstall $(DEV_USER_FLAG)
+	python setup.py develop --uninstall
 	rm -rf build

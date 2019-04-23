@@ -37,6 +37,42 @@ _RAW_DIR = 'raw_dir'
 
 # Available datasets
 _DATASETS = {
+    'cst_train_v101': {
+        _IM_DIR:
+            _DATA_DIR + '/cst/cst_v101',
+        _ANN_FN:
+            _DATA_DIR + '/cst/annotations/instances_cst_train_0420.json'
+    },
+    'cst_val_v101': {
+        _IM_DIR:
+            _DATA_DIR + '/cst/cst_v101',
+        _ANN_FN:
+            _DATA_DIR + '/cst/annotations/instances_cst_val_0420.json'
+    },
+    'cst_train_v101_1000': {
+        _IM_DIR:
+            _DATA_DIR + '/cst/cst_v101_1000',
+        _ANN_FN:
+            _DATA_DIR + '/cst/annotations/instances_cst_train_0420_1000.json'
+    },
+    'cst_val_v101_1000': {
+        _IM_DIR:
+            _DATA_DIR + '/cst/cst_v101_1000',
+        _ANN_FN:
+            _DATA_DIR + '/cst/annotations/instances_cst_val_0420_1000.json'
+    },
+    'cst_train_v101_2000': {
+        _IM_DIR:
+            _DATA_DIR + '/cst/cst_v101_2000',
+        _ANN_FN:
+            _DATA_DIR + '/cst/annotations/instances_cst_train_0420_2000.json'
+    },
+    'cst_val_v101_2000': {
+        _IM_DIR:
+            _DATA_DIR + '/cst/cst_v101_2000',
+        _ANN_FN:
+            _DATA_DIR + '/cst/annotations/instances_cst_val_0420_2000.json'
+    },
     'cityscapes_fine_instanceonly_seg_train': {
         _IM_DIR:
             _DATA_DIR + '/cityscapes/images',
