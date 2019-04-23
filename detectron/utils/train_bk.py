@@ -107,7 +107,6 @@ def create_model():
     logger = logging.getLogger(__name__)
     start_iter = 0
     checkpoints = {}
-    ## output_dir会存放train的结果，引入DATASETS主要是为了命名
     output_dir = get_output_dir(cfg.TRAIN.DATASETS, training=True)
     weights_file = cfg.TRAIN.WEIGHTS
     if cfg.TRAIN.AUTO_RESUME:
@@ -116,8 +115,7 @@ def create_model():
         if os.path.exists(final_path):
             logger.info('model_final.pkl exists; no need to train!')
             return None, None, None, {'final': final_path}, output_dir
-        ## Training will copy TRAIN.WEIGHTS and treat it as a candidate checkpoint
-        ## __C.TRAIN.COPY_WEIGHTS = False
+
         if cfg.TRAIN.COPY_WEIGHTS:
             copyfile(
                 weights_file,
